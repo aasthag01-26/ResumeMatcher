@@ -38,12 +38,18 @@ const InputSection = () => {
     );
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/match", {
+      // ✅ Automatically switch between local and Render URL
+    const API_BASE_URL =
+      import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000";
+
+    const response = await fetch(`${API_BASE_URL}/match`, {
         method: "POST",
         body: formData,
       });
 
       const data = await response.json();
+      console.log("✅ Match API success:", data);
+
       setResults(data);
     } catch (error) {
       console.error("Error fetching match results:", error);

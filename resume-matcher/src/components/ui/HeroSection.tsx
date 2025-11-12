@@ -1,5 +1,6 @@
 
 const HeroSection = () => {
+  
   return (
     <section id="hero" className="text-center py-24 bg-darkbg">
       <h1 className="text-5xl font-bold mb-4">
