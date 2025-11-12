@@ -1,5 +1,4 @@
 // ResultsSection.tsx
-import React from "react";
 
 const ResultsSection = () => {
   return (

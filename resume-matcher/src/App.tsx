@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "./components/ui/HeroSection";
 import InputSection from "./components/ui/InputSection";
 // import ResultsSection from "./components/ui/ResultSection";
