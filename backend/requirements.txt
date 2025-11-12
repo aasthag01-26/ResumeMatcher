@@ -1,0 +1,8 @@
+Flask
+flask-cors
+gunicorn
+sentence-transformers
+spacy
+PyMuPDF
+torch
+scikit-learn
